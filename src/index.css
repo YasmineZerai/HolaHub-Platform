@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap');
+
+
+@layer components{
+    .homePageButton{
+        @apply text-peachy  font-bold  bg-gradient-to-r from-baby-boy-clothes to-creamy-ish hover:bg-gradient-to-l hover:from-baby-boy-clothes hover:to-creamy-ish  rounded-lg  p-5 text-center me-2 mb-2 w-fit flex justify-evenly gap-4 items-center
+    }
+    .sideBarButton{
+        box-shadow: rgba(255, 178, 95, 0.25) 0px 30px 60px -12px inset, rgba(90, 90, 90, 0.3) 0px 18px 36px -18px inset;
+    }
+    .backImage {
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain ;
+        
+      }
+    .imageOne{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\3d-casual-life-girls-smiling-and-waving.png");
+    }
+    .imageTwo{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\3d-casual-life-mom-and-daughter-at-kitchen.png");
+    }
+    .imageThree{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\casual-life-3d-paper-bag-full-of-groceries.png");
+        transform: translateX(30px);
+
+    }
+    .imageFour{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\3d-casual-life-airplane.png");
+
+    }
+    .imageFive{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\3d-casual-life-young-girl-and-boy-sitting-at-the-table-and-drinking-vine.png");
+
+    }
+    .imageSix{
+        background-image: url("C:\Users\zerai\Documents\myFolder\React\MyPlatform\pics\3d-casual-life-color-palette-and-brush.png");
+
+    }
+    .base-timer {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .base-timer__svg {
+      transform: scaleX(-1);
+    }
+    
+    .base-timer__circle {
+      fill: none;
+      stroke: none;
+    }
+    
+    .base-timer__path-elapsed {
+      stroke-width: 7px;
+      stroke: grey;
+    }
+    
+    .base-timer__path-remaining {
+      stroke-width: 7px;
+      stroke-linecap: round;
+      transform: rotate(90deg);
+      transform-origin: center;
+      transition: 1s linear all;
+      fill-rule: nonzero;
+      stroke: currentColor;
+    }
+    
+    .base-timer__path-remaining.green {
+      color: #9DC8D0;
+    }
+    
+    .base-timer__path-remaining.orange {
+      color: #F9B572;
+    }
+    
+    .base-timer__path-remaining.red {
+      color: #FFB4B4;
+    }
+    
+    .base-timer__label {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      scale: 0.9;
+    }
+}
